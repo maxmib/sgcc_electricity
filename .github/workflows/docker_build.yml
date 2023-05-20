@@ -1,12 +1,8 @@
 name: docker_build
 
 on:
-  push:
-    branches:
-      - 'main'
-  release:
-    types:
-      - 'created'
+  repository_dispatch:
+  workflow_dispatch:
 
 jobs:
   docker_build:
